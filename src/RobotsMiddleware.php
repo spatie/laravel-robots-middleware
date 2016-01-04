@@ -13,12 +13,6 @@ class RobotsMiddleware
      */
     protected $response;
 
-    /**
-     * @param \Illuminate\Http\Request $request
-     * @param \Closure                 $next
-     *
-     * @return mixed
-     */
     public function handle(Request $request, Closure $next)
     {
         $this->response = $next($request);
@@ -40,24 +34,14 @@ class RobotsMiddleware
         throw new InvalidIndexRule('An indexing rule needs to return a boolean or a string');
     }
 
-    /**
-     * @param string $contents
-     *
-     * @return \Illuminate\Http\Response
-     */
-    protected function responseWithRobots($contents)
+    protected function responseWithRobots(string $contents)
     {
         $this->response->header('x-robots-tag', $contents);
 
         return $this->response;
     }
 
-    /**
-     * @param \Illuminate\Http\Request $request
-     *
-     * @return bool|string
-     */
-    protected function shouldIndex(Request $request)
+    protected function shouldIndex(Request $request) : bool
     {
         return true;
     }

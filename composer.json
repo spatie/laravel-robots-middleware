@@ -4,7 +4,9 @@
     "keywords": [
         "robots",
         "spatie",
-        "seo"
+        "seo",
+        "index",
+        "robots"
     ],
     "homepage": "https://github.com/spatie/laravel-robots-middleware",
     "license": "MIT",
@@ -17,8 +19,8 @@
         }
     ],
     "require": {
-        "php" : ">=5.6.0",
-        "illuminate/http": "^5.2",
+        "php" : "^7.0",
+        "illuminate/http": "^5.1",
         "orchestra/testbench": "^3.2"
     },
     "require-dev": {
