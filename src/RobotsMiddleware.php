@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class RobotsMiddleware
 {
+    /**
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure $next
+     *
+     * @return mixed
+     */
     public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
@@ -23,7 +29,12 @@ class RobotsMiddleware
         return $response;
     }
 
-    protected function shouldntBeIndexed(Request $request) : bool
+    /**
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return bool
+     */
+    protected function shouldntBeIndexed(Request $request)
     {
         return false;
     }

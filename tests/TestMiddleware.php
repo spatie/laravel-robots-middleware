@@ -7,7 +7,12 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class TestMiddleware extends RobotsMiddleware
 {
-    protected function shouldntBeIndexed(Request $request) : bool
+    /**
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return bool
+     */
+    protected function shouldntBeIndexed(Request $request)
     {
         return $request->segment(1) === 'go-away';
     }
