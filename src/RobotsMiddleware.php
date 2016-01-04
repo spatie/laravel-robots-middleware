@@ -4,9 +4,15 @@ namespace Spatie\RobotsMiddleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class RobotsMiddleware
 {
+    /**
+     * @var \Illuminate\Http\Response
+     */
+    protected $response;
+
     /**
      * @param \Illuminate\Http\Request $request
      * @param \Closure $next
@@ -15,27 +21,44 @@ class RobotsMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        $response = $next($request);
+        $this->response = $next($request);
 
-        if (array_key_exists('x-robots-tag', $response->headers->all())) {
-            return $response;
+        if (array_key_exists('x-robots-tag', $this->response->headers->all())) {
+            return $this->response;
         }
 
-        $response->header(
-            'x-robots-tag',
-            $this->shouldntBeIndexed($request) ? 'none' : 'all'
-        );
+        $shouldIndex = $this->shouldIndex($request);
 
-        return $response;
+        if (is_bool($shouldIndex)) {
+            return $this->responseWithRobots($shouldIndex ? 'all' : 'none');
+        }
+
+        if (is_string($shouldIndex)) {
+            return $this->responseWithRobots($shouldIndex);
+        }
+
+        throw new InvalidIndexRule('An indexing rule needs to return a boolean or a string');
+    }
+
+    /**
+     * @param string $contents
+     *
+     * @return \Illuminate\Http\Response
+     */
+    protected function responseWithRobots($contents)
+    {
+        $this->response->header('x-robots-tag', $contents);
+
+        return $this->response;
     }
 
     /**
      * @param \Illuminate\Http\Request $request
      *
-     * @return bool
+     * @return bool|string
      */
-    protected function shouldntBeIndexed(Request $request)
+    protected function shouldIndex(Request $request)
     {
-        return false;
+        return true;
     }
 }
