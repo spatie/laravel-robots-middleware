@@ -1,0 +1,40 @@
+{
+    "name": "spatie/laravel-robots-middleware",
+    "description": "Add an `all` or `none` robots header to your requests via a middleware in Laravel",
+    "keywords": [
+        "robots",
+        "spatie",
+        "seo"
+    ],
+    "homepage": "https://github.com/spatie/laravel-robots-middleware",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian De Deyne",
+            "email": "sebastian@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+        "illuminate/http": "^5.2",
+        "orchestra/testbench": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\RobotsMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\RobotsMiddleware\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
