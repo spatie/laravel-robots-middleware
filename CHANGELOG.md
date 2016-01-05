@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.0.2 - 2016-01-05
+
+- Removed response typehint since it hinders redirects
+
 ## 1.0.1 - 2016-01-05
 
 - Moved orchestra to devdependencies

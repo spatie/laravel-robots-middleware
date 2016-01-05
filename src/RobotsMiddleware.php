@@ -4,16 +4,12 @@ namespace Spatie\RobotsMiddleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class RobotsMiddleware
 {
-    /**
-     * @var \Illuminate\Http\Response
-     */
     protected $response;
 
-    public function handle(Request $request, Closure $next) : Response
+    public function handle(Request $request, Closure $next)
     {
         $this->response = $next($request);
 
@@ -34,7 +30,7 @@ class RobotsMiddleware
         throw new InvalidIndexRule('An indexing rule needs to return a boolean or a string');
     }
 
-    protected function responseWithRobots(string $contents) : Response
+    protected function responseWithRobots(string $contents)
     {
         $this->response->header('x-robots-tag', $contents);
 
