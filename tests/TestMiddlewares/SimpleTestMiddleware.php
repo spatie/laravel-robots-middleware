@@ -7,7 +7,10 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class SimpleTestMiddleware extends RobotsMiddleware
 {
-    protected function shouldIndex(Request $request) : bool
+    /**
+     * @return string|bool
+     */
+    protected function shouldIndex(Request $request)
     {
         return $request->segment(1) !== 'go-away';
     }

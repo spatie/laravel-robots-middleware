@@ -3,9 +3,6 @@
 namespace Spatie\RobotsMiddleware\Test;
 
 use Spatie\RobotsMiddleware\InvalidIndexRule;
-use Spatie\RobotsMiddleware\Test\TestMiddlewares\CustomTestMiddleware;
-use Spatie\RobotsMiddleware\Test\TestMiddlewares\InvalidTestMiddleware;
-use Spatie\RobotsMiddleware\Test\TestMiddlewares\SimpleTestMiddleware;
 
 class RobotsMiddlewareTest extends TestCase
 {

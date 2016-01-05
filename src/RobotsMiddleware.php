@@ -41,7 +41,10 @@ class RobotsMiddleware
         return $this->response;
     }
 
-    protected function shouldIndex(Request $request) : bool
+    /**
+     * @return string|bool
+     */
+    protected function shouldIndex(Request $request)
     {
         return true;
     }

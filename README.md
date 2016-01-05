@@ -32,7 +32,10 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class MyRobotsMiddleware extends RobotsMiddleware
 {
-    protected function shouldIndex(Request $request) : bool
+    /**
+     * @return string|bool
+     */
+    protected function shouldIndex(Request $request)
     {
         return $request->segment(1) !== 'admin';
     }
