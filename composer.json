@@ -20,7 +20,7 @@
     ],
     "require": {
         "php" : "^7.0",
-        "illuminate/http": "^5.1",
+        "illuminate/http": "^5.1"
     },
     "require-dev": {
         "orchestra/testbench": "^3.2",
