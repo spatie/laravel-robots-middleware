@@ -7,10 +7,7 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class CustomTestMiddleware extends RobotsMiddleware
 {
-    /**
-     * @return string|bool
-     */
-    protected function shouldIndex(Request $request)
+    protected function shouldIndex(Request $request) : string
     {
         if ($request->segment(1) === 'custom-tag') {
             return 'nofollow';

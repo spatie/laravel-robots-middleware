@@ -13,7 +13,7 @@ class RobotsMiddleware
      */
     protected $response;
 
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next) : Response
     {
         $this->response = $next($request);
 
@@ -34,7 +34,7 @@ class RobotsMiddleware
         throw new InvalidIndexRule('An indexing rule needs to return a boolean or a string');
     }
 
-    protected function responseWithRobots(string $contents)
+    protected function responseWithRobots(string $contents) : Response
     {
         $this->response->header('x-robots-tag', $contents);
 
