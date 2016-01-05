@@ -21,9 +21,9 @@
     "require": {
         "php" : "^7.0",
         "illuminate/http": "^5.1",
-        "orchestra/testbench": "^3.2"
     },
     "require-dev": {
+        "orchestra/testbench": "^3.2",
         "phpunit/phpunit" : "4.*"
     },
     "autoload": {
