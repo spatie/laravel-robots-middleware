@@ -5,6 +5,7 @@ All Notable changes to `laravel-robots-middleware` will be documented in this fi
 ## 1.0.2 - 2016-01-05
 
 - Removed response typehint since it hinders redirects
+- Composer fix
 
 ## 1.0.1 - 2016-01-05
 
