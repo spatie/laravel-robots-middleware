@@ -13,10 +13,6 @@ class RobotsMiddleware
     {
         $this->response = $next($request);
 
-        if (array_key_exists('x-robots-tag', $this->response->headers->all())) {
-            return $this->response;
-        }
-
         $shouldIndex = $this->shouldIndex($request);
 
         if (is_bool($shouldIndex)) {
@@ -32,7 +28,7 @@ class RobotsMiddleware
 
     protected function responseWithRobots(string $contents)
     {
-        $this->response->headers['x-robots-tag'] = $contents;
+        $this->response->headers->set('x-robots-tag', $contents, false);
 
         return $this->response;
     }
