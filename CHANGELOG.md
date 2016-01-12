@@ -2,6 +2,10 @@
 
 All Notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.0.3 - 2016-01-12
+
+- Fixed a bug that would occur when a `Symfony` response got returned instead of an `Illuminate` response
+
 ## 1.0.2 - 2016-01-05
 
 - Removed response typehint since it hinders redirects
