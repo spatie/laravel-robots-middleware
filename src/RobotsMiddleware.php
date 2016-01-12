@@ -32,7 +32,7 @@ class RobotsMiddleware
 
     protected function responseWithRobots(string $contents)
     {
-        $this->response->header('x-robots-tag', $contents);
+        $this->response->headers['x-robots-tag'] = $contents;
 
         return $this->response;
     }
