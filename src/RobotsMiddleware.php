@@ -23,7 +23,7 @@ class RobotsMiddleware
             return $this->responseWithRobots($shouldIndex);
         }
 
-        throw new InvalidIndexRule('An indexing rule needs to return a boolean or a string');
+        throw InvalidIndexRule::requiresBooleanOrString();
     }
 
     protected function responseWithRobots(string $contents)
