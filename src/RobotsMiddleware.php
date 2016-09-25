@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 class RobotsMiddleware
 {
     protected $response;
-
+    /**
+     * @param Request $request
+     * @param Closure $next
+     * @return mixed
+     */
     public function handle(Request $request, Closure $next)
     {
         $this->response = $next($request);
@@ -25,7 +29,11 @@ class RobotsMiddleware
 
         throw InvalidIndexRule::requiresBooleanOrString();
     }
-
+    
+    /**
+     * @param $contents
+     * @return mixed
+     */
     protected function responseWithRobots(string $contents)
     {
         $this->response->headers->set('x-robots-tag', $contents, false);
@@ -34,7 +42,8 @@ class RobotsMiddleware
     }
 
     /**
-     * @return string|bool
+     * @param Request $request
+     * @return bool|string
      */
     protected function shouldIndex(Request $request)
     {
