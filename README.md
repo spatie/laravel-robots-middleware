@@ -5,6 +5,7 @@
 [![Build Status](https://img.shields.io/travis/spatie/laravel-robots-middleware/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-robots-middleware)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/b214dd86-16cd-433e-934f-1b9216139cef.svg?style=flat-square)](https://insight.sensiolabs.com/projects/b214dd86-16cd-433e-934f-1b9216139cef)
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-robots-middleware.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-robots-middleware)
+[![StyleCI](https://styleci.io/repos/49018008/shield?branch=master)](https://styleci.io/repos/49018008)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-robots-middleware.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-robots-middleware)
 
 A tiny, opinionated package to enable or disable indexing your site via a middleware in Laravel.
