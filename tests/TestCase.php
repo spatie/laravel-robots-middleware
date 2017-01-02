@@ -4,8 +4,8 @@ namespace Spatie\RobotsMiddleware\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\RobotsMiddleware\Test\TestMiddlewares\CustomTestMiddleware;
-use Spatie\RobotsMiddleware\Test\TestMiddlewares\InvalidTestMiddleware;
 use Spatie\RobotsMiddleware\Test\TestMiddlewares\SimpleTestMiddleware;
+use Spatie\RobotsMiddleware\Test\TestMiddlewares\InvalidTestMiddleware;
 
 class TestCase extends Orchestra
 {
