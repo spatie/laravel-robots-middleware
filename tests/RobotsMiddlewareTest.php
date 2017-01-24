@@ -51,12 +51,4 @@ class RobotsMiddlewareTest extends TestCase
         $headers = $this->call('get', 'custom-tag')->headers->all();
         $this->assertEquals('nofollow', $headers['x-robots-tag'][0]);
     }
-
-    /** @test */
-    public function it_doesnt_accept_invalid_middleware_rules()
-    {
-        $this->setExpectedException(InvalidIndexRule::class);
-
-        $this->call('get', 'invalid-middleware')->headers->all();
-    }
 }
