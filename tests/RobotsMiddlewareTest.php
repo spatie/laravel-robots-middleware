@@ -2,8 +2,6 @@
 
 namespace Spatie\RobotsMiddleware\Test;
 
-use Spatie\RobotsMiddleware\InvalidIndexRule;
-
 class RobotsMiddlewareTest extends TestCase
 {
     public function setUp()
