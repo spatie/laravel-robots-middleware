@@ -46,7 +46,11 @@ class MyRobotsMiddleware extends RobotsMiddleware
      */
     protected function shouldIndex(Request $request)
     {
-        return $request->segment(1) !== 'admin';
+        if (config('app.env', 'production') === 'production') {
+            return $request->segment(1) !== 'admin';
+        }
+
+        return false;
     }
 }
 ```
