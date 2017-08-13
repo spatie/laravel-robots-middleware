@@ -1,6 +1,6 @@
 # Changelog
 
-All Notable changes to `laravel-robots-middleware` will be documented in this file
+All notable changes to `laravel-robots-middleware` will be documented in this file
 
 ## 1.0.3 - 2016-01-12
 
