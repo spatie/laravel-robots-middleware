@@ -9,7 +9,7 @@ use Spatie\RobotsMiddleware\Test\TestMiddlewares\InvalidTestMiddleware;
 
 class TestCase extends Orchestra
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.1.0 - 2019-09-04
+
+- add support for Laravel 6
+
 ## 1.0.3 - 2016-01-12
 
 - Fixed a bug that would occur when a `Symfony` response got returned instead of an `Illuminate` response
