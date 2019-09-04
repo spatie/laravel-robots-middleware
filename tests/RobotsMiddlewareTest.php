@@ -4,7 +4,7 @@ namespace Spatie\RobotsMiddleware\Test;
 
 class RobotsMiddlewareTest extends TestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
