@@ -34,6 +34,7 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 class MyRobotsMiddleware extends RobotsMiddleware
 {
     /**
+     * @param \Illuminate\Http\Request $request
      * @return string|bool
      */
     protected function shouldIndex(Request $request)
