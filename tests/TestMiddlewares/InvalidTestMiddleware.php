@@ -7,7 +7,7 @@ use Spatie\RobotsMiddleware\RobotsMiddleware;
 
 class InvalidTestMiddleware extends RobotsMiddleware
 {
-    protected function shouldIndex(Request $request) : array
+    protected function shouldIndex(Request $request): array
     {
         return [];
     }
