@@ -1,11 +1,8 @@
 # Enable or disable the indexing of your app
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-robots-middleware.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-robots-middleware)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/spatie/laravel-robots-middleware/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-robots-middleware)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/b214dd86-16cd-433e-934f-1b9216139cef.svg?style=flat-square)](https://insight.sensiolabs.com/projects/b214dd86-16cd-433e-934f-1b9216139cef)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/spatie/laravel-blink/run-tests?label=tests)
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-robots-middleware.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-robots-middleware)
-[![StyleCI](https://styleci.io/repos/49018008/shield?branch=master)](https://styleci.io/repos/49018008)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-robots-middleware.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-robots-middleware)
 
 A tiny, opinionated package to enable or disable indexing your site via a middleware in Laravel.
@@ -13,6 +10,12 @@ A tiny, opinionated package to enable or disable indexing your site via a middle
 More on the Robots meta tag: https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+
+## Support us
+
+We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us). 
+
+We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -79,25 +82,10 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details. Due to nature of this pa
 
 If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
 
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
-
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
-
 ## Credits
 
 - [Sebastian De Deyne](https://github.com/sebastiandedeyne)
 - [All Contributors](../../contributors)
-
-## Support us
-
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
-All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License
 
