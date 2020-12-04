@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.3.0 - 2020-12-04
+
+- Add support for PHP 8
+- Drop suppoer for Laravel 5.8
+
 ## 1.2.1 - 2020-09-09
 
 - Add support for Laravel 8
