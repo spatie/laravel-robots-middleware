@@ -32,6 +32,7 @@ By default, the middleware enables indexing on all pages. You'll probably want t
 
 ```php
 // app/Http/Middleware/MyRobotsMiddleware.php
+namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Spatie\RobotsMiddleware\RobotsMiddleware;
