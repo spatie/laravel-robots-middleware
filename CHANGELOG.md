@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.3.1 - 2022-01-21
+
+- support Laravel 9
+
 ## 1.3.0 - 2020-12-04
 
 - Add support for PHP 8
