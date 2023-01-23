@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.3.2 - 2023-01-23
+
+- support Laravel 10
+
 ## 1.3.1 - 2022-01-21
 
 - support Laravel 9
