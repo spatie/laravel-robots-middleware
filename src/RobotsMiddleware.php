@@ -7,8 +7,18 @@ use Illuminate\Http\Request;
 
 class RobotsMiddleware
 {
+    /**
+     * @var \Symfony\Component\HttpFoundation\Response $response
+     */
     protected $response;
 
+    /**
+     * Handle the given request and get the response.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure $next
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function handle(Request $request, Closure $next)
     {
         $this->response = $next($request);
