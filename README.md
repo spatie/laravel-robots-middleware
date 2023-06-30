@@ -28,7 +28,7 @@ $ composer require spatie/laravel-robots-middleware
 
 ## Usage
 
-By default, the middleware enables indexing on all pages. You'll probably want to inherit your own class containing you application's indexing rule handler.  
+By default, the middleware enables indexing on all pages. You'll probably want to inherit your own class containing your application's indexing rule handler.  
 
 ```php
 // app/Http/Middleware/MyRobotsMiddleware.php
