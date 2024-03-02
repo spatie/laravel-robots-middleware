@@ -22,11 +22,11 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.2|^8.0",
-        "illuminate/http": "^8.0|^9.0|^10"
+        "illuminate/http": "^8.0|^9.0|^10|^11.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.23|^7.0|^8.0",
-        "phpunit/phpunit": "^9.4"
+        "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+        "phpunit/phpunit": "^9.4|^10.5"
     },
     "autoload": {
         "psr-4": {
