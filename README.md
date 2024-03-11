@@ -1,7 +1,7 @@
 # Enable or disable the indexing of your app
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-robots-middleware.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-robots-middleware)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/spatie/laravel-robots-middleware/run-tests?label=tests)
+[![run-tests](https://github.com/spatie/laravel-robots-middleware/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/laravel-robots-middleware/actions/workflows/run-tests.yml)
 ![Check & fix styling](https://github.com/spatie/laravel-robots-middleware/workflows/Check%20&%20fix%20styling/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-robots-middleware.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-robots-middleware)
 
