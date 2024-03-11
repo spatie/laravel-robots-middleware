@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-robots-middleware` will be documented in this file
 
+## 1.4.0 - 2024-03-11
+
+### What's Changed
+
+* Laravel 11.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-robots-middleware/pull/25
+
+**Full Changelog**: https://github.com/spatie/laravel-robots-middleware/compare/1.3.2...1.4.0
+
 ## 1.3.2 - 2023-01-23
 
 - support Laravel 10
