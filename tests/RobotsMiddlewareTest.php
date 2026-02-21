@@ -2,6 +2,8 @@
 
 namespace Spatie\RobotsMiddleware\Test;
 
+use PHPUnit\Framework\Attributes\Test;
+
 class RobotsMiddlewareTest extends TestCase
 {
     public function setUp(): void
@@ -11,7 +13,7 @@ class RobotsMiddlewareTest extends TestCase
         $this->setUpDummyRoutes();
     }
 
-        #[Test]
+    #[Test]
     public function it_always_adds_a_robots_header_tag()
     {
         $testRoutes = ['behold-me', 'go-away'];
@@ -22,28 +24,28 @@ class RobotsMiddlewareTest extends TestCase
         }
     }
 
-        #[Test]
+    #[Test]
     public function it_sets_the_robots_header_to_all_when_it_should_index()
     {
         $headers = $this->call('get', 'behold-me')->headers->all();
         $this->assertEquals('all', $headers['x-robots-tag'][0]);
     }
 
-        #[Test]
+    #[Test]
     public function it_sets_the_robots_header_to_none_when_it_shouldnt_index()
     {
         $headers = $this->call('get', 'go-away')->headers->all();
         $this->assertEquals('none', $headers['x-robots-tag'][0]);
     }
 
-        #[Test]
+    #[Test]
     public function it_doesnt_overwrite_previously_set_tags()
     {
         $headers = $this->call('get', 'dont-follow-me')->headers->all();
         $this->assertEquals('nofollow', $headers['x-robots-tag'][0]);
     }
 
-        #[Test]
+    #[Test]
     public function it_can_set_a_custom_tag_via_a_string()
     {
         $headers = $this->call('get', 'custom-tag')->headers->all();
