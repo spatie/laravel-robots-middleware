@@ -2,6 +2,7 @@
 
 namespace Spatie\RobotsMiddleware\Test;
 
+use Illuminate\Http\Response;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\RobotsMiddleware\Test\TestMiddlewares\CustomTestMiddleware;
 use Spatie\RobotsMiddleware\Test\TestMiddlewares\InvalidTestMiddleware;
@@ -30,7 +31,7 @@ class TestCase extends Orchestra
                 });
 
                 $this->app['router']->get('dont-follow-me', function () {
-                    return response('Hello world!')->header('x-robots-tag', 'nofollow');
+                    return (new Response('Hello world!'))->header('x-robots-tag', 'nofollow');
                 });
             }
         );
